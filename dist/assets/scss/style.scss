@@ -1,0 +1,78 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+}
+header {
+  nav{
+    position: fixed;
+    img {
+      width: 10em;
+      margin: 0.3em 0;
+    }
+  }
+}
+#products {
+  div.card {
+    img {
+      height: 10em;
+      object-fit: contain;
+      box-sizing: border-box;
+    }
+    .alert:first-letter {
+      text-transform: uppercase;
+    }
+    .alert {
+      position: absolute;
+      display: inline-block;
+      color: #fff;
+      padding: 0.1em 0.7em;
+      top: 7.7em;
+      left: 0.5em;
+    }
+    .alert[value="books"] {
+      background-color: #1c8c5a;
+    }
+    .alert[value="food"] {
+      background-color: #16c7ef;
+    }
+    .alert[value="medical-products"] {
+      background-color: #9b52dc;
+    }
+    .alert[value="other"] {
+      background-color: #6b747e;
+    }
+    label {
+      font-size: 0.9rem;
+    }
+  }
+}
+h2 {
+  font-size: 2.5rem;
+}
+table {
+  thead {
+    th {
+      color: #616776;
+    }
+    th:nth-child(5) {
+      pointer-events: none;
+      button {
+        opacity: 0;
+        i {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  td {
+    border-bottom: none;
+    border-top: 0.5px solid darken($light, 20%);
+    text-transform: capitalize;
+  }
+  th {
+    border-bottom: none;
+    border-top: 0.5px solid darken($light, 20%);
+  }
+}
